@@ -1,2 +1,5 @@
 ﻿  Source.c
+C:\Users\Administrator\Desktop\ydProject\CProject\CProject\Source.c(153,10): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Administrator\Desktop\ydProject\CProject\CProject\Source.c(154,9): warning C4477: 'printf' : format string '%f' requires an argument of type 'double', but variadic argument 1 has type 'int'
+C:\Users\Administrator\Desktop\ydProject\CProject\CProject\Source.c(149,7): warning C4133: 'initializing': incompatible types - from 'double *' to 'int *'
   CProject.vcxproj -> C:\Users\Administrator\Desktop\ydProject\CProject\x64\Debug\CProject.exe
