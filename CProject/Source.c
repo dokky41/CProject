@@ -1,73 +1,82 @@
-#include <stdio.h> // 기본 입출력 헤더 파일
+#include <stdio.h> 
+#include <limits.h>
+
+// #include 파일 처리 전처리문 
+// 시스템 파일이나 사용자 정의 파일을 프로그램 소스에
+// 삽입하여 사용하기 위한 선언문입니다.
+
+// 전처리기란?
+// 프로그램이 컴파일되기 이전에 프로그램에 대한
+// 사전 처리하는 과정입니다.
+
+
+#pragma region 매크로
+
+	// 프로그램 내에서 특정한 데이터가 문자열로
+	// 정의되고 처리되는 과정입니다.
+
+	// 보통 대문자로 선언, 매크로는 컴파일러가 아닌 선행처리기에 의해서
+	// 처리되는 문장이기 때문에 명령문 끝에 ";"을 
+	// 사용하지 않습니다.
+#define SIZE 5
+
+	// 매크로는 메모리 공간을 가지고 있지 않습니다. (리터럴 상수)
+
+#pragma endregion
+
 
 void main()
 {
-	// 배열이란?
 
-#pragma region 배열
+#pragma region 문자열
 
-	// 같은 자료형의 변수들로 이루어진 유한 집합입니다.
+	// 연속적인 메모리 공간에 저장된 
+	// 문자 변수의 집합입니다.
 
-	//  0  1  2  3  4   
-	// [ ][ ][ ][ ][ ]
-	//int array[5];
+	// 문자열의 경우 포인터를 이용하여 문자열 상수를
+	// 가리키도록 설정할 수 있습니다.
+	//const char * name = "James"; // 맨앞에 const 생략됨
 
-	//// 배열의 경우 첫 번째 원소(index)는 0부터 시작합니다.
-	//array[0] = 100;
-	//array[1] = 200;
-	//array[2] = 300;
-	//array[3] = 400;
-	//array[4] = 500;
+	//// %s : 문자열을 출력하는 서식
+	//printf("name 변수의 값 : %p \n", name);
+	//printf("name 변수의 가리키는 값 : %s \n", name);
 
-	//// 배열의 크기는 컴파일이 되는 시점부터
-	//// 고정된 메모리 공간을 가지게 됩니다.
-	//// array[5] = 600; (X)
+	////*name = 'G'; name[0] = 'a'; (변경이 불가능)
+	//// 문자열 상수는 read only data 영역에 저장 되기 때문에 문자열 값 변경이 불가능
 
-	//for (int i = 0; i < 5; i++) {
+	//name = "Tom";
 
-	//	printf("array[%d]의 값 : %d \n", i,array[i]);
+	//// 문자열은 맨 마지막에 무효의 문자(NULL)가 자동으로
+	//// 포함됩니다.
 
-	//}
+	//// NULL 문자의 역할은 문자열의 끝을 알려주는 것입니다.
+	//printf("name 변수의 값 : %p \n", name);
+	//printf("name 변수가 가리키는 값 : %s \n", name);
 
-	//// [] [] []
-	//					//  [0]   [1]   [2] 
-	//float itemList[3] = { 15.5f,30.25f,57.15f }; // 12byte
-
-	//// 배열의 메모리 공간은 프로그램이 실행되는 동안 변경할 수 없습니다.
-	//for (int i = 0; i < 3; i++) {
-
-	//	printf("itemList[%d]의 값 : %f \n", i, itemList[i]);
-
-	//}
+	// 배열을 이용한 문자열
+	//char string [] = "Game"; //null 포함 5byte
 	//
-	//// 배열의 크기는 생략할 수 있으며, 초기화 목록에서 
-	//// 설정한 요소에 따라 배열의 크기가 결정됩니다.
-	//char string[] = {'A','B','C'}; 
+	//// 문자열은 공백도 함께 메모리 공간에 포함됩니다.
+	//char string1 [] = { "App l\0e" };
 
-	//// 배열의 이름은 배열의 시작 주소를 가리킵니다.
-	//printf("string배열의 주소 : %p \n", string);
-	//printf("string배열 [0]의 주소 : %p \n", &string[0]);
+	//// 문자 배열 사이에 무효의 문자를 넣게 되면
+	//// 무효의 문자까지만 문자열을 출력합니다.
+	//printf("string의 값 : %s \n", string);
+	//printf("string1의 값 : %s \n", string1);
 
-	
-	// 배열과 포인터의 관계
-	//int data = 100;
-	//int* ptr = &data;
+	//string[1] = 'b';
+	//string[3] = 'o';
 
-	//printf("ptr 변수의 값 : %p \n", ptr);
-	//printf("ptr + 1 : %p \n", ptr+1);
+	//printf("string의 값 : %s \n", string);
 
-	// 10진수
+	// char 배열은 포인터 상수입니다.  
+	// 인덱스 값은 변경가능하지만 새로운 주소값을 넣는것은 불가능
+	// 주소에 주소를 넣으려는건 안됨
+	// string = "Content"; (x)
+	// string = string1;   (x)
 
-	// 2진수
 
-	// 16진수
-	// 1 ~ 9
-	// 10 : A
-	// 11 : B
-	// 12 : C
-	// 13 : D
-	// 14 : E
-	// 15 : F
+
 
 
 
@@ -76,65 +85,34 @@ void main()
 
 #pragma endregion
 
-#pragma region 시프트 연산자
-	// 비트 값을 주어진 숫자만큼 부호 방향으로 
-	// 이동시키는 연산자입니다.
+	// 매크로
+	// printf("매크로 SIZE의 값 : %d", SIZE);
 
-	//char value = 10; // 0000 1010 
+#pragma region 최댓값과 최솟값
 
-	//// 0000 1010
-	////  0000 1010 -> 0000 0101 ( 오른쪽으로 1번 비트 연산한 결과 )
-	//// 0000 0101 -> 0000 0010 ( 오른쪽으로 2번 비트 연산한 결과 )
-	//// >> : 비트값을 주어진 숫자만큼 오른쪽으로 이동시킵니다.
-	//printf("value 변수를 오른쪽으로 2번 비트 연산한 결과 : %d \n",value >> 2); 
-	//// >>= 대입연산자 적용 후 값이 변화함
-	//printf("value 변수의 값 : %d \n",value);
+	// 배열[5] = {10,5,6,99,1}
 
+	// 최댓값 : 99
+	// 최솟값 : 1
 
-	//// 0000 1010  
-	//// 0101 0000 = 80
-	//// << : 비트값을 주어진 숫자만큼 왼쪽으로 이동시킵니다.
-	//printf("value 변수를 왼쪽으로 3번 비트 연산한 결과는 : %d \n", value << 3);
+#define ARRAYSIZE 5
+	int max = INT_MIN;
+	int min = INT_MAX;
 
+	int a[ARRAYSIZE] = { 10,5,6,99,1 };
 
+	for (int i = 0; i < ARRAYSIZE; i++) {
 
+			if (max < a[i]) {
+				max = a[i];
+			}
+			if (min > a[i]) {
+				min = a[i];
+			}
 
+	}
 
-#pragma endregion
-
-#pragma region 홀수와 짝수
-
-	// 문제) 17 <- 입력
-	// 홀수 출력
-	//int num = 0;
-
-	//printf("입력 : ");
-	//scanf_s("%d", &num);
-
-	//if (num % 2 == 0) {
-	//	printf("짝수");
-	//}
-	//else if (num % 2 != 0) {
-	//	printf("홀수");
-	//}
-	
-
-
-#pragma endregion
-
-#pragma region 네이밍 컨벤션
-
-	// camel case (카멜 표기법) (변수)
-	// 첫 단어를 제외하고 첫 글자를 대문자로 표기하는 표기법입니다.
-	// ex) int playerHealth;
-
-	// pascal case (파스칼 표기법)
-	// 단어의 첫 글자를 대문자로 표기하는 표기법 (함수,클래스,구조체)
-	// ex) void SelectTarget() { }
-
-	// snake case (스네이크 표기법)
-	// 전부 소문자로 작성하고 단어 사이에 '_' 를 표기하는 표기법
-	// ex) api_url
+	printf("최대 : %d 최소 : %d \n", max, min);
 
 #pragma endregion
 
