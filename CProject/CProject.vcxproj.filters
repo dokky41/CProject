@@ -41,5 +41,8 @@
     <ClInclude Include="%282023.4.20%29배열.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="%282023.4.21%29문자열.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
