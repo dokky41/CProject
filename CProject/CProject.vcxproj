@@ -138,6 +138,8 @@
     <ClInclude Include="%282023.4.19%29포인터 상수화.h" />
     <ClInclude Include="%282023.4.20%29배열.h" />
     <ClInclude Include="%282023.4.21%29문자열.h" />
+    <ClInclude Include="%282023.4.24%29함수.h" />
+    <ClInclude Include="SoundManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
