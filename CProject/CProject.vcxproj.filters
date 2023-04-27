@@ -53,7 +53,7 @@
     <ClInclude Include="%282023.4.25%29재귀함수.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="(2023.4.26)지역변수.h">
+    <ClInclude Include="%282023.4.26%29변수의범위.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
