@@ -56,5 +56,8 @@
     <ClInclude Include="%282023.4.26%29변수의범위.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="%282023.4.27%29동적할당.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
