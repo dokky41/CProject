@@ -142,6 +142,7 @@
     <ClInclude Include="%282023.4.25%29재귀함수.h" />
     <ClInclude Include="%282023.4.26%29변수의범위.h" />
     <ClInclude Include="%282023.4.27%29동적할당.h" />
+    <ClInclude Include="%282023.4.28%29구조체.h" />
     <ClInclude Include="SoundManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
