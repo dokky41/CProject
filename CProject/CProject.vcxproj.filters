@@ -62,5 +62,11 @@
     <ClInclude Include="%282023.4.28%29구조체.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="%282023.5.2%29포인터배열.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="(2023.5.3)2차원배열.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
