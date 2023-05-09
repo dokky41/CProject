@@ -147,6 +147,9 @@
     <ClInclude Include="%282023.5.2%29포인터배열.h" />
     <ClInclude Include="SoundManager.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="%282023.5.4%29실수를저장하는방법.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
