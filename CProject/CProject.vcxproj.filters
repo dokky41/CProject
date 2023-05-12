@@ -71,6 +71,9 @@
     <ClInclude Include="%282023.5.10%29자기참조구조체.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="%282023.5.11%29가변인수.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="%282023.5.4%29실수를저장하는방법.h">
