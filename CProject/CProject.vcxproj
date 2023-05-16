@@ -146,6 +146,7 @@
     <ClInclude Include="%282023.4.28%29구조체.h" />
     <ClInclude Include="%282023.5.10%29자기참조구조체.h" />
     <ClInclude Include="%282023.5.12%29랜덤함수.h" />
+    <ClInclude Include="%282023.5.15%29키입력함수.h" />
     <ClInclude Include="(2023.5.3)2차원배열.h" />
     <ClInclude Include="%282023.5.2%29포인터배열.h" />
     <ClInclude Include="SoundManager.h" />
