@@ -80,6 +80,12 @@
     <ClInclude Include="%282023.5.15%29키입력함수.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="(2023.5.16)좌표이동함수.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="헤더.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="%282023.5.4%29실수를저장하는방법.h">
