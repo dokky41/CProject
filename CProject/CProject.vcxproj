@@ -151,7 +151,7 @@
     <ClInclude Include="(2023.5.3)2차원배열.h" />
     <ClInclude Include="%282023.5.2%29포인터배열.h" />
     <ClInclude Include="SoundManager.h" />
-    <ClInclude Include="헤더.h" />
+    <ClInclude Include="%282023.5.17%29파일입출력.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="%282023.5.4%29실수를저장하는방법.h" />
