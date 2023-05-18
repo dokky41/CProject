@@ -4,16 +4,16 @@
 #include <conio.h>
 #include <windows.h>
 
-#define SIZE 50
+#define SIZER 50
 
 int main()
 {   
 
-#pragma region µ¿Àû ¹è¿­
+#pragma region ë™ì  ë°°ì—´
 
-    // HEAPÀÌ¶ó´Â ¸Þ¸ð¸® °ø°£À» ÀÌ¿ëÇÏ¿©
-    // ¹è¿­ÀÇ Å©±â¸¦ ÄÄÆÄÀÏ ´Ü°è°¡ ¾Æ´Ñ ½ÇÇà ½Ã°£¿¡ 
-    // °¡º¯ÀûÀ¸·Î ¹Ù²Ü ¼ö ÀÖ´Â ¹è¿­ÀÔ´Ï´Ù.
+    // HEAPì´ë¼ëŠ” ë©”ëª¨ë¦¬ ê³µê°„ì„ ì´ìš©í•˜ì—¬
+    // ë°°ì—´ì˜ í¬ê¸°ë¥¼ ì»´íŒŒì¼ ë‹¨ê³„ê°€ ì•„ë‹Œ ì‹¤í–‰ ì‹œê°„ì— 
+    // ê°€ë³€ì ìœ¼ë¡œ ë°”ê¿€ ìˆ˜ ìžˆëŠ” ë°°ì—´ìž…ë‹ˆë‹¤.
 
    /* int size = 10;
 
@@ -28,7 +28,7 @@ int main()
 
     for (int i = 0; i < size; i++)
     {
-        printf("arrayPtr[%d]ÀÇ °ª : %d\n",i, arrayPtr[i]);
+        printf("arrayPtr[%d]ì˜ ê°’ : %d\n",i, arrayPtr[i]);
 
     }
 
@@ -38,7 +38,7 @@ int main()
 #pragma endregion
 
 
-#pragma region fflush() ÇÔ¼ö
+#pragma region fflush() í•¨ìˆ˜
 
     /*char a,b,c;
 
@@ -54,19 +54,19 @@ int main()
 
 
 
-    printf("aº¯¼öÀÇ °ª : %c\n",a);
-    printf("bº¯¼öÀÇ °ª : %c\n",b);
-    printf("cº¯¼öÀÇ °ª : %c\n",c);*/
+    printf("aë³€ìˆ˜ì˜ ê°’ : %c\n",a);
+    printf("bë³€ìˆ˜ì˜ ê°’ : %c\n",b);
+    printf("cë³€ìˆ˜ì˜ ê°’ : %c\n",c);*/
 
 
 #pragma endregion
 
 
-#pragma region ¹®ÀÚ¿­ µÚÁý±â
+#pragma region ë¬¸ìžì—´ ë’¤ì§‘ê¸°
 
     //char string[10] = { 0, };
 
-    //scanf("%s", string);  // &¾ÈºÙ¿©µµµÊ
+    //scanf("%s", string);  // &ì•ˆë¶™ì—¬ë„ë¨
 
    
     //for(int i=0; i<= strlen(string); i++)
@@ -78,7 +78,7 @@ int main()
 #pragma endregion
 
 
-#pragma region ¹®ÀÚ¿­ µÚÁý±â ´ä
+#pragma region ë¬¸ìžì—´ ë’¤ì§‘ê¸° ë‹µ
 
     /*
         char string[100]={0,};
