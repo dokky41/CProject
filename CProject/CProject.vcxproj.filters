@@ -15,11 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="%282023.4.12%29변수.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -86,6 +81,9 @@
     <ClInclude Include="%282023.5.17%29파일입출력.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="%282023.5.18%29동적배열.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="%282023.5.4%29실수를저장하는방법.h">
@@ -94,5 +92,10 @@
     <None Include="%282023.5.9%29함수 포인터.h">
       <Filter>Header Files</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

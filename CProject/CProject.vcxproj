@@ -127,9 +127,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Source.c" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="%282023.4.12%29변수.h" />
     <ClInclude Include="%282023.4.13%29비트.h" />
     <ClInclude Include="%282023.5.11%29가변인수.h" />
@@ -148,6 +145,7 @@
     <ClInclude Include="%282023.5.12%29랜덤함수.h" />
     <ClInclude Include="%282023.5.15%29키입력함수.h" />
     <ClInclude Include="(2023.5.16)좌표이동함수.h" />
+    <ClInclude Include="%282023.5.18%29동적배열.h" />
     <ClInclude Include="(2023.5.3)2차원배열.h" />
     <ClInclude Include="%282023.5.2%29포인터배열.h" />
     <ClInclude Include="SoundManager.h" />
@@ -156,6 +154,9 @@
   <ItemGroup>
     <None Include="%282023.5.4%29실수를저장하는방법.h" />
     <None Include="%282023.5.9%29함수 포인터.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
