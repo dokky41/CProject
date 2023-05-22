@@ -84,6 +84,9 @@
     <ClInclude Include="%282023.5.18%29동적배열.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="%282023.5.19%29더블 버퍼링.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="%282023.5.4%29실수를저장하는방법.h">

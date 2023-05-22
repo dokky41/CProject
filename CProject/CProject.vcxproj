@@ -146,6 +146,7 @@
     <ClInclude Include="%282023.5.15%29키입력함수.h" />
     <ClInclude Include="(2023.5.16)좌표이동함수.h" />
     <ClInclude Include="%282023.5.18%29동적배열.h" />
+    <ClInclude Include="%282023.5.19%29더블 버퍼링.h" />
     <ClInclude Include="(2023.5.3)2차원배열.h" />
     <ClInclude Include="%282023.5.2%29포인터배열.h" />
     <ClInclude Include="SoundManager.h" />
