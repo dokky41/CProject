@@ -1,29 +1,34 @@
+#pragma once
+
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
 #include <conio.h>
 #include <windows.h>
+#include <stdlib.h>
+#include <time.h>
 
-
-#define UP 72
 #define LEFT 75
 #define RIGHT 77
-#define DOWN 80
 
-#define WIDTH 11
-#define HEIGHT 11
-
-
+#define height 30
+#define width 60
 
 typedef struct Player
 {
-	// 좌표값
+	//좌표
 	int x, y;
-	// 캐릭터 모양
 	const char* shape;
 
 }Player;
 
+typedef struct Enemy
+{
+	//좌표
+	int x, y;
+	const char* shape;
+
+}Enemy;
 
 // 좌표 이동 함수
 void GotoXY(int x, int y)
@@ -34,66 +39,9 @@ void GotoXY(int x, int y)
 	//좌표 정보를 설정
 	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), position);
 
-
 }
 
-// 미로 맵 데이터
-char maze[WIDTH][HEIGHT];
-
-// 미로 맵 생성
-void CreateMaze()
-{
-	// 0 : 빈 공간 (" ")
-	// 1 : 벽 (ㅁ)
-	// 2 : 탈출구 (◎)
-
-	strcpy(maze[0], "00111111111");
-	strcpy(maze[1], "10001111111");
-	strcpy(maze[2], "11100000001");
-	strcpy(maze[3], "11101111101");
-	strcpy(maze[4], "11101111101");
-	strcpy(maze[5], "11000000011");
-	strcpy(maze[6], "11011111011");
-	strcpy(maze[7], "10010000011");
-	strcpy(maze[8], "11001111111");
-    strcpy(maze[9], "11100000002");
-   strcpy(maze[10], "11111111111");
-
-
-}
-
-// 0 : 빈 공간 (" ")
-// 1 : 벽 (ㅁ)
-// 2 : 탈출구 (◎)
-
-void Renderer()
-{
-	// Hint 2중 for문 사용
-	for (int i = 0; i < WIDTH; i++)
-	{
-		for (int j = 0; j < HEIGHT; j++)
-		{
-			if (maze[i][j] == '0')
-			{
-				printf("  ");
-			}
-			else if (maze[i][j] == '1')
-			{
-				printf("■");
-			}
-			else if (maze[i][j] == '2')
-			{
-				printf("◎");
-			}
-
-		}
-		printf("\n");
-	}
-
-
-}
-
-void Keyboard(char map[WIDTH][HEIGHT], Player * ptrPlayer)
+void Keyboard(Player* ptrPlayer)
 {
 	char key = 0;
 
@@ -108,13 +56,9 @@ void Keyboard(char map[WIDTH][HEIGHT], Player * ptrPlayer)
 
 		switch (key)
 		{
-		case UP: if (maze[ptrPlayer->y-1][ptrPlayer->x / 2] != '1') ptrPlayer->y--;
+		case LEFT: if (ptrPlayer->x <= 0) return;  ptrPlayer->x -= 2;
 			break;
-		case LEFT:if (maze[ptrPlayer->y][ptrPlayer->x / 2 - 1] != '1') ptrPlayer->x -= 2;
-			break;
-		case RIGHT:if (maze[ptrPlayer->y][ptrPlayer->x / 2 + 1] != '1') ptrPlayer->x += 2;
-			break;
-		case DOWN:if (maze[ptrPlayer->y+1][ptrPlayer->x / 2] != '1') ptrPlayer->y++;
+		case RIGHT:if (ptrPlayer->x >= 28) return;  ptrPlayer->x += 2;
 			break;
 
 		}
@@ -124,36 +68,65 @@ void Keyboard(char map[WIDTH][HEIGHT], Player * ptrPlayer)
 
 }
 
+int RandomX()
+{
+	srand(time(NULL));
 
+	int random = rand() % 31;
+
+	if (random % 2 == 1)
+	{
+		random += 1;
+	}
+
+	return random;
+}
 
 int main()
 {
+	system("mode con cols=30 lines=25");
 
-#pragma region 미로 찾기
 
-	Player player = {0, 0,"★"};
-	
-	CreateMaze();
-	
+#pragma region 똥피하기 
+	// 1. x축으로만 이동
+	// 2. 콘솔 크기 (가로 : 30 세로 : 60)
+	// 3. x<0 작아졌다면 -로 이동못하도록
+	// 4. Enemy의 x축은 랜덤으로 설정되도록 하며, y축이 아래로 내려오도록 설정
+	// 똥과 플레이어가 충돌했다면 게임 오버
+	Player player = { 16,23,"★" };
+	Enemy enemy = { RandomX(),0,"♨" };
+
 	while (1)
 	{
-		Renderer();
+		Keyboard(&player);
 
-		Keyboard(maze, &player);
+		GotoXY(enemy.x, enemy.y++);
+		printf("%s", enemy.shape);
+
+		if (enemy.y >= 24)
+		{
+			enemy.y = 0;
+			enemy.x = RandomX();
+		}
+
+		if (player.x == enemy.x && player.y == enemy.y)
+		{
+			printf("패배");
+			break;
+		}
 
 		GotoXY(player.x, player.y);
 		printf("%s", player.shape);
 
 		Sleep(100);
 		system("cls");
+
 	}
 
 
 
-	
-
-
 #pragma endregion
+
 
 
 
