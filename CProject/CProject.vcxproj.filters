@@ -93,6 +93,12 @@
     <ClInclude Include="%282023.5.23%29똥피하기내답안.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="%282023.5.23%29빌드과정.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="%282023.5.4%29실수를저장하는방법.h">

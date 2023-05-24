@@ -149,8 +149,10 @@
     <ClInclude Include="%282023.5.19%29더블 버퍼링.h" />
     <ClInclude Include="%282023.5.22%29미로찾기게임_1.h" />
     <ClInclude Include="%282023.5.23%29똥피하기내답안.h" />
+    <ClInclude Include="%282023.5.23%29빌드과정.h" />
     <ClInclude Include="(2023.5.3)2차원배열.h" />
     <ClInclude Include="%282023.5.2%29포인터배열.h" />
+    <ClInclude Include="LoadManager.h" />
     <ClInclude Include="SoundManager.h" />
     <ClInclude Include="%282023.5.17%29파일입출력.h" />
   </ItemGroup>
