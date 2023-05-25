@@ -1,4 +1,2 @@
 ﻿  source.cpp
-F:\c_jaryo\CProject\CProject\source.cpp(15,21): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
-F:\c_jaryo\CProject\CProject\source.cpp(15,23): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
   CProject.vcxproj -> F:\c_jaryo\CProject\x64\Debug\CProject.exe
