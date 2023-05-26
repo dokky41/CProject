@@ -1,3 +1,2 @@
-﻿  source.c
-F:\c_jaryo\CProject\RunAndHit\source.c(113,2): warning C4013: 'getch'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+﻿  source.cpp
   RunAndHit.vcxproj -> F:\c_jaryo\CProject\x64\Debug\RunAndHit.exe

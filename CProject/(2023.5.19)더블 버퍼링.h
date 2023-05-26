@@ -36,6 +36,7 @@ typedef struct Player
 // 버퍼를 초기화하는 함수
 void ScreenInit()
 {
+	// 구조체 선언
 	CONSOLE_CURSOR_INFO cursor;
 
 	// 버퍼의 가로 사이즈, 세로 사이즈
@@ -76,7 +77,7 @@ void ScreenInit()
 	// 커서의 활성화 여부
 	// false : 거짓
 	// true : 참
-	cursor.bVisible = false;
+	cursor.bVisible = 0;
 
 	SetConsoleCursorInfo(Screen[0], &cursor);
 	SetConsoleCursorInfo(Screen[1], &cursor);
