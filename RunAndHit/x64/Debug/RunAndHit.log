@@ -1,2 +1,12 @@
 ﻿  source.cpp
+F:\c_jaryo\CProject\RunAndHit\MainGame.h(37,20): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\MainGame.h(37,27): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\MainGame.h(40,37): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\MainGame.h(40,49): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\MainGame.h(152,5): warning C4267: '인수': 'size_t'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+F:\c_jaryo\CProject\RunAndHit\MainGame.h(181,45): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\MainGame.h(193,9): warning C4267: '인수': 'size_t'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+F:\c_jaryo\CProject\RunAndHit\MainGame.h(212,34): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\MainGame.h(212,47): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\MainGame.h(223,9): warning C4267: '인수': 'size_t'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   RunAndHit.vcxproj -> F:\c_jaryo\CProject\x64\Debug\RunAndHit.exe

@@ -134,10 +134,10 @@ void ScreenPrint(int x, int y, const char* string)
 	);
 }
 
-void gameStart()
+void GameStart()
 {
 
-	PlaySound(TEXT("Sound.wav"), NULL, SND_ASYNC | SND_LOOP); // 반복 재생
+	//PlaySound(TEXT("Sound.wav"), NULL, SND_ASYNC | SND_LOOP); // 반복 재생
 
 	// 색상을 설정하는 함수 
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 1);

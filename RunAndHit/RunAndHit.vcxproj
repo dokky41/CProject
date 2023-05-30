@@ -132,7 +132,10 @@
   <ItemGroup>
     <ClInclude Include="DoubleBuffer.h" />
     <ClInclude Include="FrameWork\Terrain.h" />
+    <ClInclude Include="GameHeader.h" />
+    <ClInclude Include="MainGame.h" />
     <ClInclude Include="StartHeader.h" />
+    <ClInclude Include="TrapHeader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

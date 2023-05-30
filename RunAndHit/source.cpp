@@ -1,21 +1,38 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <conio.h>
 #include <windows.h>
-//#include "DoubleBuffer.h"
 #include "StartHeader.h"
+#include "MainGame.h"
+//#include "GameHeader.h"
 
 int main()
 {
-	system("mode con cols=163 lines=43 | title run");
+	system("mode con cols=164 lines=43 | title pickPocket");
+	CursorView();
 
 	StartMenu();
 
-	
-	
-	//gameStart();
+	while (1)
+	{
+		if (GetAsyncKeyState(VK_RETURN))
+		{
+			PlaySound(TEXT("coin.wav"), NULL, SND_ASYNC); 
+			Sleep(1000);
+			system("cls");
+			GameStart2();
 
+		}
+		else if (GetAsyncKeyState(VK_ESCAPE))
+		{
+			break;
+		}
+
+	};
+	
+	
 
 
 	return 0;

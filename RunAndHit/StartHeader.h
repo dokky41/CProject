@@ -8,24 +8,32 @@
 #pragma comment (lib, "winmm.lib")
 #include <mmsystem.h>
 
-#define ENTER 43
-#define ESC 110
-#define MAX 1000
 
 void tleDraw() {
 
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 1);
-	printf("##################################################################################################################################################################\n");
+	printf("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
 	for (int i = 0; i < 40; i++) 
 	{ 
-		printf("##                                                                                                                                                              ##\n"); 
+		printf("■                                                                                                                                                                ■"); 
                                                                                                                                                           
 	}
-	printf("##################################################################################################################################################################\n");
+	printf("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
+	
 
 }
 
 void gotoxy(int x, int y) {
+
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6);
+	HANDLE consoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
+	COORD pos;
+	pos.X = x;
+	pos.Y = y;
+	SetConsoleCursorPosition(consoleHandle, pos);
+}
+
+void gotoxy2(int x, int y) {
 
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
 	HANDLE consoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -39,7 +47,6 @@ void gotoxy(int x, int y) {
 
 void menuDraw() 
 {
-	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6);
 	gotoxy(40, 10);
 	printf("          ZZ           Z                                   BZ                 EZ");
 	gotoxy(40, 11);
@@ -62,10 +69,10 @@ void menuDraw()
 	printf("8Z                             ZZ");
 	
 
-	gotoxy(72 - 2, 30);
+	gotoxy2(72 - 2, 30);
 	printf(" 게 임 시 작 (ENTER)");
 
-	gotoxy(72, 32);
+	gotoxy2(72, 32);
 	printf("  종 료 (ESC)");
 	
 
@@ -80,39 +87,57 @@ void CursorView()
 	SetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &cursorInfo);
 }
 
+void KeyGuide()
+{
+	
+
+	for (int i = 22; i <= 33; i++)
+	{
+		
+		gotoxy2(115, i);
+		printf("■                          ■");
+	}
+
+	gotoxy2(115, 22);
+	printf("■■■■■■■■■■■■■■");
+
+
+	gotoxy2(122 - 2, 24);
+	printf(" ▲");
+
+	gotoxy2(120 - 2, 25);
+	printf(" ◀▼▶    방향키");
+
+
+	gotoxy2(120 - 2, 28);
+	printf(" 아이템 사용  ( CTRL )");
+	
+	gotoxy2(120 - 2, 31);
+	printf(" 방해물 설치 ( SPACE )");
+
+	gotoxy2(115, 33);
+	printf("■■■■■■■■■■■■■■");
+
+	
+
+}
+
+
 void StartMenu()
 {
 	//PlaySound(TEXT("Sound.wav"), NULL, SND_ASYNC | SND_LOOP); // 반복 재생
 
 	// 효과음은 헤더파일로 만들어어야함 검색창에 C++ FMOD
+	
 
 	char key = 0;
 
 	tleDraw();
 	menuDraw();
 	CursorView();
-	
-	while (1)
-	{
-		if (_kbhit())
-		{
-			key = _getch();
+	KeyGuide();
 
-			if (key == -32)
-			{
-				key = _getch();
-			}
 
-			switch (key)
-			{
-			case ENTER:  printf("ENTER\n");
-				break;
-			case ESC:  printf("ESC\n");
-				break;
-			}
-
-		}
-	};
 
 
 }
