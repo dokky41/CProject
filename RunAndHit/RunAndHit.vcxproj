@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DoubleBuffer.h" />
+    <ClInclude Include="endHeader.h" />
     <ClInclude Include="FrameWork\Terrain.h" />
     <ClInclude Include="GameHeader.h" />
     <ClInclude Include="MainGame.h" />

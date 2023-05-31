@@ -8,30 +8,31 @@
 #include "MainGame.h"
 //#include "GameHeader.h"
 
+
+
 int main()
 {
 	system("mode con cols=164 lines=43 | title pickPocket");
 	CursorView();
-
 	StartMenu();
 
-	while (1)
-	{
-		if (GetAsyncKeyState(VK_RETURN))
+		while (1) 
 		{
-			PlaySound(TEXT("coin.wav"), NULL, SND_ASYNC); 
-			Sleep(1000);
-			system("cls");
-			GameStart2();
 
-		}
-		else if (GetAsyncKeyState(VK_ESCAPE))
-		{
-			break;
-		}
+			if (GetAsyncKeyState(VK_RETURN))
+			{
+				PlaySound(TEXT("coin.wav"), NULL, SND_ASYNC); 
+				Sleep(1000);
+				system("cls");
+				GameStart2();
 
-	};
-	
+			}
+			
+		
+
+
+			
+		};
 	
 
 

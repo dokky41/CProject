@@ -3,7 +3,7 @@
 #include<conio.h>
 #include<time.h>
 #define DINO_BOTTOM_Y 12
-//#define TREE_BOTTOM_Y 20
+#define TREE_BOTTOM_Y 20
 #define TREE_BOTTOM_Y 30
 #define TREE_BOTTOM_X 45
 
@@ -50,14 +50,13 @@ void DrawDino(int dinoY)
     printf("     $$$$$$     \n");
     if (legFlag)
     {
-        printf("     $    $$$    \n");
-        printf("     $$          ");
-        legFlag = false;
-    }
+    printf("     $    $$$    \n");
+    printf("     $$          ");
+     
     else
     {
-        printf("     $$$  $     \n");
-        printf("          $$    ");
+    printf("     $$$  $     \n");
+    printf("          $$    ");
         legFlag = true;
     }
 }
@@ -66,7 +65,8 @@ void DrawDino(int dinoY)
 void DrawTree(int treeX)
 {
     GotoXY(treeX, TREE_BOTTOM_Y);
-    printf("$$$$");
+    printf("$$$$");   legFlag = false;
+    }
     GotoXY(treeX, TREE_BOTTOM_Y + 1);
     printf(" $$ ");
     GotoXY(treeX, TREE_BOTTOM_Y + 2);
