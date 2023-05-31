@@ -4,7 +4,6 @@
 #include<time.h>
 #define DINO_BOTTOM_Y 12
 #define TREE_BOTTOM_Y 20
-#define TREE_BOTTOM_Y 30
 #define TREE_BOTTOM_X 45
 
 //콘솔 창의 크기와 제목을 지정하는 함수
@@ -50,9 +49,9 @@ void DrawDino(int dinoY)
     printf("     $$$$$$     \n");
     if (legFlag)
     {
-    printf("     $    $$$    \n");
-    printf("     $$          ");
-     
+        printf("     $    $$$    \n");
+        printf("     $$          ");
+    }
     else
     {
     printf("     $$$  $     \n");

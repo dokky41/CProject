@@ -1,0 +1,43 @@
+﻿  source.cpp
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(33,20): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(33,27): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(36,37): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(36,49): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(115,12): error C2065: 'CloudPic': undeclared identifier
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(116,12): error C2065: 'CloudPic': undeclared identifier
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(117,12): error C2065: 'CloudPic': undeclared identifier
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(118,12): error C2065: 'CloudPic': undeclared identifier
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(119,12): error C2065: 'CloudPic': undeclared identifier
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(123,34): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(123,49): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(134,9): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(143,12): error C2065: 'CloudPic2': undeclared identifier
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(144,12): error C2065: 'CloudPic2': undeclared identifier
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(145,12): error C2065: 'CloudPic2': undeclared identifier
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(146,12): error C2065: 'CloudPic2': undeclared identifier
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(147,12): error C2065: 'CloudPic2': undeclared identifier
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(151,34): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(151,49): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(162,9): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(186,5): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(198,39): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(198,54): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(209,5): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(212,1): error C2059: syntax error: '}'
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(212,1): error C2143: syntax error: missing ';' before '}'
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(15,1): error C2143: syntax error: missing ';' before '{'
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(15,1): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(74,12): error C2065: 'MePic': undeclared identifier
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(75,12): error C2065: 'MePic': undeclared identifier
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(76,12): error C2065: 'MePic': undeclared identifier
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(81,16): error C2065: 'MePic': undeclared identifier
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(82,16): error C2065: 'MePic': undeclared identifier
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(88,16): error C2065: 'MePic': undeclared identifier
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(89,16): error C2065: 'MePic': undeclared identifier
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(96,34): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(96,47): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(107,9): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\MainGame.h(51,34): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\MainGame.h(51,39): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\MainGame.h(62,9): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\MainGame.h(178,10): error C3861: 'DrawMonster': identifier not found

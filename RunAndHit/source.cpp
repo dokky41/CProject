@@ -6,8 +6,6 @@
 #include <windows.h>
 #include "StartHeader.h"
 #include "MainGame.h"
-//#include "GameHeader.h"
-
 
 
 int main()

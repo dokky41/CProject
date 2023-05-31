@@ -3,24 +3,151 @@
 #include<conio.h>
 #include<time.h>
 
-#define TREE_BOTTOM_Y 30
-#define TREE_BOTTOM_X 45
+#define BottomTrapX 163
+#define BottomTrapY 43
 
-char TreePic[10][10];
+#define CLOUD_BOTTOM_Y 10
+#define CLOUD_BOTTOM_X 155
+#define CLOUD_BOTTOM_Y2 3
+#define CLOUD_BOTTOM_X2 155
 
-//나무를 그리는 함수
-void DrawTree(int TreeX, int TreeY, char string[10][10])
+// HANDLE 인덱스에 접근해서 버퍼를 교체시키는 변수
+int screenIndex = 0;
+
+// 버퍼의 크기
+int width = 100;
+int height = 60;
+
+// 버퍼 생성
+HANDLE Screen[2]; // [0] front buffer
+// [1] back buffer
+
+
+// 버퍼를 초기화하는 함수
+void ScreenInit()
+{
+    CONSOLE_CURSOR_INFO cursor;
+
+    // 버퍼의 가로 사이즈, 세로 사이즈
+    COORD size = { width, height };
+
+    // Left, Top, Right, Bottom
+    SMALL_RECT rect = { 0, 0, width - 1, height - 1 };
+
+    // 화면 2개를 생성합니다.
+    // front buffer
+    Screen[0] = CreateConsoleScreenBuffer
+    (
+        GENERIC_READ | GENERIC_WRITE,
+        FILE_SHARE_READ | FILE_SHARE_WRITE,
+        NULL,
+        CONSOLE_TEXTMODE_BUFFER,
+        NULL
+    );
+
+    SetConsoleScreenBufferSize(Screen[0], size);
+
+    SetConsoleWindowInfo(Screen[0], TRUE, &rect);
+
+    // back buffer
+    Screen[1] = CreateConsoleScreenBuffer
+    (
+        GENERIC_READ | GENERIC_WRITE,
+        FILE_SHARE_READ | FILE_SHARE_WRITE,
+        NULL,
+        CONSOLE_TEXTMODE_BUFFER,
+        NULL
+    );
+
+    SetConsoleScreenBufferSize(Screen[1], size);
+
+    SetConsoleWindowInfo(Screen[1], TRUE, &rect);
+
+    // 커서의 활성화 여부
+    // false : 거짓
+    // true : 참
+    cursor.bVisible = 0;
+
+    SetConsoleCursorInfo(Screen[0], &cursor);
+    SetConsoleCursorInfo(Screen[1], &cursor);
+}
+
+
+// 버퍼를 교체하는 함수
+void ScreenFlipping()
+{
+    // 버퍼는 하나만 활성화시킬 수 있습니다.
+    SetConsoleActiveScreenBuffer(Screen[screenIndex]);
+
+    screenIndex = !screenIndex;
+}
+
+// 교체된 버퍼를 지워주는 함수
+void ScreenClear()
+{
+    COORD coord = { 0,0 };
+
+    DWORD dw;
+
+    FillConsoleOutputCharacter
+    (
+        Screen[screenIndex],
+        ' ',
+        width * height,
+        coord,
+        &dw
+    );
+}
+
+// 버퍼를 해제하는 함수
+void ScreenRelease()
+{
+    CloseHandle(Screen[0]);
+    CloseHandle(Screen[1]);
+}
+
+
+//구름을 그리는 함수
+void DrawCloud(int CloudX, int CloudY, char string[10][30])
 {
 
-    strcpy(TreePic[0], "$$$$$$\n");
-    strcpy(TreePic[1], "  $$\n");
-    strcpy(TreePic[2], "  $$\n");
-    strcpy(TreePic[3], "  $$\n");
-    strcpy(TreePic[4], "  $$");
+    strcpy(CloudPic[0], "  @@@@@@@@@\n");
+    strcpy(CloudPic[1], " @@@@@@@@@@@\n");
+    strcpy(CloudPic[2], "@@@@@@@@@@@@@\n");
+    strcpy(CloudPic[3], " @@@@@@@@@@@\n");
+    strcpy(CloudPic[4], "  @@@@@@@@@");
 
     for (int i = 0; i < 5; i++)
     {
-        COORD cursorPosition = { TreeX, TreeY + i };
+        COORD cursorPosition = { CloudX, CloudY + i };
+        DWORD dw;
+        SetConsoleCursorPosition(Screen[screenIndex], cursorPosition);
+
+        WriteFile
+        (
+            Screen[screenIndex],
+            string[i],
+            strlen(string[i]),
+            &dw,
+            NULL
+        );
+    }
+
+}
+
+//2번째 구름을 그리는 함수
+void DrawCloud2(int CloudX, int CloudY, char string[10][30])
+{
+
+    strcpy(CloudPic2[0], "  @@@@@@@@@\n");
+    strcpy(CloudPic2[1], " @@@@@@@@@@@\n");
+    strcpy(CloudPic2[2], "@@@@@@@@@@@@@\n");
+    strcpy(CloudPic2[3], " @@@@@@@@@@@\n");
+    strcpy(CloudPic2[4], "  @@@@@@@@@");
+
+    for (int i = 0; i < 5; i++)
+    {
+        COORD cursorPosition = { CloudX, CloudY + i };
         DWORD dw;
         SetConsoleCursorPosition(Screen[screenIndex], cursorPosition);
 
@@ -37,12 +164,48 @@ void DrawTree(int TreeX, int TreeY, char string[10][10])
 }
 
 
-void Trap()
+//바닥그리기
+void BottomDraw()
 {
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
+    char string[] = "■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■";
+    COORD cursorPosition = { 0, 42 };
 
-   
+    DWORD dw;
 
-    DrawTree(treeX,treeY, TreePic);        //draw Tree
+    SetConsoleCursorPosition(Screen[screenIndex], cursorPosition);
 
+    WriteFile
+    (
+        Screen[screenIndex],
+        string,
+        strlen(string),
+        &dw,
+        NULL
+    );
 
+    
 }
+
+
+//밑바닥 트랩을 그리는 함수
+void DrawBottomTrap(int bottomTX, int bottomTY)
+{
+    BottomDraw();
+    
+    char string[] = "▲";
+
+    COORD cursorPosition = { bottomTX - 20, bottomTY - 10 };
+    DWORD dw;
+    SetConsoleCursorPosition(Screen[screenIndex], cursorPosition);
+
+    WriteFile
+    (
+        Screen[screenIndex],
+        string,
+        strlen(string),
+        &dw,
+        NULL
+    );
+}
+
