@@ -102,8 +102,7 @@ bool isCollision(const int treeX, const int dinoY)
     //공룡의 높이가 충분하지 않다면 충돌로 처리
     GotoXY(0, 0);
     printf("treeX : %d, dinoY : %d", treeX, dinoY); //이런식으로 적절한 X, Y를 찾습니다.
-    if (treeX <= 8 && treeX >= 4 &&
-        dinoY > 8)
+    if (treeX <= 8 && treeX >= 4 && dinoY > 8)
     {
         return true;
     }
@@ -196,3 +195,5 @@ void GameGo()
     }
     
 }
+
+

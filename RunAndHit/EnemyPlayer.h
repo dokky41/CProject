@@ -10,37 +10,52 @@
 #define ME_BOTTOM_X 70
 #define ME_BOTTOM_Y 32
 
+
+char MonsterPic[30][100];
+char MePic[5][10];
+char overPic[10][100];
+
 //괴물을 그리는 함수
-void DrawMonster(int monsterX, char string[13][23])
+void DrawMonster(int monsterX, char string[30][100])
 {
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 9);
 
     static bool legFlag = true;
 
-    strcpy(MonsterPic[0], "        $$$$$$$\n");
-    strcpy(MonsterPic[1], "       $$ $$$ $$\n");
-    strcpy(MonsterPic[2], "       $$$$$$$$$\n");
-    strcpy(MonsterPic[3], "       $$$    $$\n");
-    strcpy(MonsterPic[4], "       $$$$$$$$$\n");
-    strcpy(MonsterPic[5], "      $$$$$$$$$$$$$$$\n");
-    strcpy(MonsterPic[6], "     $$$$$$$$$$\n");
-    strcpy(MonsterPic[7], "    $$$$$$$$$$$$$$$$$\n");
-    strcpy(MonsterPic[8], "    $$$$$$$$\n");
-    strcpy(MonsterPic[9], "    $$$$$$$$\n");
-    strcpy(MonsterPic[10], "    $$$$$$\n");
+    strcpy(MonsterPic[0], "         ■■■■■\n");
+    strcpy(MonsterPic[1], "         ■  ■  ■\n");
+
+    strcpy(MonsterPic[8], "           ■■■    \n");
 
     if (legFlag)
+
     {
         Sleep(10);
-        strcpy(MonsterPic[11], "    $    $$$\n");
-        strcpy(MonsterPic[12], "    $$     \n");
+    strcpy(MonsterPic[2], "         ■■■■■    \n");
+    strcpy(MonsterPic[3], "         ■■  ■■   ■\n");
+    strcpy(MonsterPic[4], "           ■■■     ■  \n");
+    strcpy(MonsterPic[5], "    ■■■■■■■■■■\n");
+    strcpy(MonsterPic[6], "    ■     ■■■       \n");
+    strcpy(MonsterPic[7], "    ■     ■■■        \n");
+    strcpy(MonsterPic[9], "           ■  \n");
+    strcpy(MonsterPic[10], "         ■    \n");
+    strcpy(MonsterPic[11], "        ■        \n");
+    strcpy(MonsterPic[12], "       ■    \n");
         legFlag = false;
     }
     else
     {
         Sleep(10);
-        strcpy(MonsterPic[11], "    $$$  $\n");
-        strcpy(MonsterPic[12], "         $$\n");
+     strcpy(MonsterPic[2], "         ■■■■■\n");
+     strcpy(MonsterPic[3], "         ■■  ■■\n");
+     strcpy(MonsterPic[4], "           ■■■\n");
+     strcpy(MonsterPic[5], "    ■■■■■■■■■■\n");
+     strcpy(MonsterPic[6], "           ■■■     \n");
+     strcpy(MonsterPic[7], "           ■■■      \n");
+     strcpy(MonsterPic[9], "               ■    \n");
+     strcpy(MonsterPic[10],"                ■    \n");
+     strcpy(MonsterPic[11],"                 ■    \n");
+     strcpy(MonsterPic[12],"                  ■    \n");
         legFlag = true;
     }
 
@@ -69,10 +84,11 @@ void DrawMonster(int monsterX, char string[13][23])
 //시민을 그리는 함수
 void DrawMe(int MeX, int MeY, char string[5][10])
 {
+
     static bool legFlag = true;
 
     strcpy(MePic[0], " ▼\n");
-    strcpy(MePic[1], "\n");
+    strcpy(MePic[1], "");
     strcpy(MePic[2], " ●\n");
 
     if (legFlag)

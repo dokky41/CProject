@@ -1,57 +1,56 @@
 ﻿  source.cpp
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(32,20): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(32,27): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(35,37): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(35,49): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(114,12): error C2065: 'CloudPic': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(115,12): error C2065: 'CloudPic': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(116,12): error C2065: 'CloudPic': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(117,12): error C2065: 'CloudPic': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(118,12): error C2065: 'CloudPic': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(122,34): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(122,49): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(133,9): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(142,12): error C2065: 'CloudPic2': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(143,12): error C2065: 'CloudPic2': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(144,12): error C2065: 'CloudPic2': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(145,12): error C2065: 'CloudPic2': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(146,12): error C2065: 'CloudPic2': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(150,34): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(150,49): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(161,9): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(185,5): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(199,39): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(199,54): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(210,5): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(20,12): error C2065: 'MonsterPic': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(21,12): error C2065: 'MonsterPic': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(22,12): error C2065: 'MonsterPic': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(23,12): error C2065: 'MonsterPic': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(24,12): error C2065: 'MonsterPic': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(25,12): error C2065: 'MonsterPic': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(26,12): error C2065: 'MonsterPic': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(27,12): error C2065: 'MonsterPic': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(28,12): error C2065: 'MonsterPic': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(29,12): error C2065: 'MonsterPic': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(30,12): error C2065: 'MonsterPic': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(35,16): error C2065: 'MonsterPic': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(36,16): error C2065: 'MonsterPic': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(42,16): error C2065: 'MonsterPic': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(43,16): error C2065: 'MonsterPic': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(51,46): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(63,9): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(74,12): error C2065: 'MePic': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(75,12): error C2065: 'MePic': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(76,12): error C2065: 'MePic': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(81,16): error C2065: 'MePic': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(82,16): error C2065: 'MePic': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(88,16): error C2065: 'MePic': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(89,16): error C2065: 'MePic': undeclared identifier
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(96,34): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(96,47): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\EnemyPlayer.h(107,9): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\MainGame.h(13,1): warning C4005: 'BottomTrapX': macro redefinition
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\TrapHeader.h(6): message : see previous definition of 'BottomTrapX'
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\MainGame.h(51,34): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\MainGame.h(51,39): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
-C:\Users\Administrator\Desktop\yd\CProject\CProject\RunAndHit\MainGame.h(62,9): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(38,20): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(38,27): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(41,37): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(41,49): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(128,34): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(128,49): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(140,9): warning C4267: '인수': 'size_t'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(157,34): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(157,49): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(168,9): warning C4267: '인수': 'size_t'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(193,5): warning C4267: '인수': 'size_t'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(203,30): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(203,46): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(214,5): warning C4267: '인수': 'size_t'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(222,30): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(222,49): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(233,5): warning C4267: '인수': 'size_t'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(257,5): warning C4267: '인수': 'size_t'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(285,34): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(285,54): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(296,9): warning C4267: '인수': 'size_t'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(314,34): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(314,48): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(325,9): warning C4267: '인수': 'size_t'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(350,34): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(350,48): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(361,9): warning C4267: '인수': 'size_t'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(390,34): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(390,48): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(401,9): warning C4267: '인수': 'size_t'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(425,34): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(425,48): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(436,9): warning C4267: '인수': 'size_t'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(455,34): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(455,48): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(466,9): warning C4267: '인수': 'size_t'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(509,34): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(509,48): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\TrapHeader.h(520,9): warning C4267: '인수': 'size_t'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+F:\c_jaryo\CProject\RunAndHit\EnemyPlayer.h(66,46): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\EnemyPlayer.h(78,9): warning C4267: '인수': 'size_t'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+F:\c_jaryo\CProject\RunAndHit\EnemyPlayer.h(112,34): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\EnemyPlayer.h(112,47): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\EnemyPlayer.h(123,9): warning C4267: '인수': 'size_t'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+F:\c_jaryo\CProject\RunAndHit\endHeader.h(47,34): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\endHeader.h(47,39): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\endHeader.h(58,9): warning C4267: '인수': 'size_t'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+F:\c_jaryo\CProject\RunAndHit\endHeader.h(93,34): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\endHeader.h(93,39): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+F:\c_jaryo\CProject\RunAndHit\endHeader.h(104,9): warning C4267: '인수': 'size_t'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+F:\c_jaryo\CProject\RunAndHit\MainSound.h(22,26): warning C4311: '형식 캐스트': 'LPVOID'에서 'DWORD'(으)로 포인터가 잘립니다.
+F:\c_jaryo\CProject\RunAndHit\MainSound.h(22,26): warning C4302: '형식 캐스트': 'LPVOID'에서 'DWORD'(으)로 잘립니다.
+F:\c_jaryo\CProject\RunAndHit\MainSound.h(27,33): warning C4311: '형식 캐스트': 'LPVOID'에서 'DWORD'(으)로 포인터가 잘립니다.
+F:\c_jaryo\CProject\RunAndHit\MainSound.h(27,33): warning C4302: '형식 캐스트': 'LPVOID'에서 'DWORD'(으)로 잘립니다.
+  RunAndHit.vcxproj -> F:\c_jaryo\CProject\x64\Debug\RunAndHit.exe
