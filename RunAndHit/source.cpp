@@ -28,6 +28,10 @@ int main()
 				GameStart2();
 
 			}
+			else if (GetAsyncKeyState(VK_ESCAPE))
+			{
+				break;
+			}
 			
 		
 

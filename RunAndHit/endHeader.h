@@ -18,17 +18,16 @@ void CursorView2()
     SetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &cursorInfo);
 }
 
+char overPic[11][100];
+
 //(v2.0) 충돌 했을때 게임오버 그려줌
-void DrawGameOver(const int score, char string[10][100],char message[])
+void DrawGameOver(const int score, char string[11][100],char message[])
 {
    
     char string2[100];
     sprintf(string2, "메세지 : %s   도망친 거리 : %dm ", message,score);
 
     CursorView();
-
-    int x = 70;
-    int y = 17;
 
     strcpy(overPic[0], "===============================");
     strcpy(overPic[1], "===============================");
@@ -44,7 +43,7 @@ void DrawGameOver(const int score, char string[10][100],char message[])
 
     for (int i = 0; i < 11; i++)
     {
-        COORD cursorPosition = { x, y + i };
+        COORD cursorPosition = { 70, 17 + i };
         DWORD dw;
         SetConsoleCursorPosition(Screen[screenIndex], cursorPosition);
 

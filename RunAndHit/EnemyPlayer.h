@@ -13,7 +13,7 @@
 
 char MonsterPic[30][100];
 char MePic[5][10];
-char overPic[10][100];
+
 
 //괴물을 그리는 함수
 void DrawMonster(int monsterX, char string[30][100])

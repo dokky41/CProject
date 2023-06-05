@@ -116,7 +116,7 @@ void KeyGuide()
 	printf(" 샷건 재장전 ( R )");
 	
 	gotoxy2(120 - 2, 31);
-	printf(" 머신건 교체 ( SPACE )");
+	printf(" 머신건 사용 ( SPACE )");
 
 	gotoxy2(115, 33);
 	printf("■■■■■■■■■■■■■■");

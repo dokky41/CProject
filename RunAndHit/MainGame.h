@@ -187,7 +187,7 @@ void GameStart2()
         {
 
             if (bottomTY-2 < meY + 10 && meY+10 < bottomTY+2) {
-                score = 0;
+               
                 //1.버퍼 초기화
                 ScreenInit();
                 PlaySound(TEXT("despair.wav"), NULL, SND_ASYNC);
